@@ -1,0 +1,38 @@
+﻿<Window x:Class="DiplomARM.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DiplomARM"
+        mc:Ignorable="d"
+        Title="Авторизация" Height="460" Width="350" WindowStartupLocation="CenterScreen"
+        Icon="Resurs/logo.png" WindowStyle="ToolWindow" MinHeight="460" MinWidth="350" MaxHeight="460" MaxWidth="350">
+    <Grid Background="#FFFBB857">
+        <!--Логитип-->
+        <Image Source="C:\Users\User\source\repos\DiplomARM\DiplomARM\Resurs\logo.png"
+               VerticalAlignment="Top" Width="150" HorizontalAlignment="Center" Margin="93,20,93,0"
+               ToolTip="Герб Новоджерелиевского сельского поселения"/>
+        <Label FontFamily="Georgia" FontSize="20" Margin="101,133,99,241">Авторизация</Label>
+        <!--Картинка логина-->
+        <Image Source="C:\Users\User\source\repos\DiplomARM\DiplomARM\Resurs\user.png" HorizontalAlignment="Center" Margin="43,184,251,196" Width="42"/>
+        <!-- Картинка пароля-->
+        <Image Source="C:\Users\User\source\repos\DiplomARM\DiplomARM\Resurs\password.png"
+               Height="37" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="46,0,248,138" Width="42"/>
+        <!--TextBox для ввода логина-->
+        <Label HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,110,56">Логин:</Label>
+        <TextBox x:Name="TextBoxLogin" Width="150" FontSize="20" VerticalAlignment="Top" Margin="0,195,0,0" />
+        <!--TextBox для ввода пароля-->
+        <Label HorizontalAlignment="Center" VerticalAlignment="Center" Margin="88,228,194,166">Пароль:</Label>
+        <PasswordBox x:Name="TextBoxPassword" FontSize="20" Margin="93,254,93,138" />
+        <!--Кнопка для входа в программу-->
+        <Button x:Name="ButtonEnter" Height="30" FontSize="16" VerticalAlignment="Bottom"
+                Margin="96,0,99,21" Click="ButtonEnter_Click" Cursor="Hand" IsDefault="True">Вход</Button>
+        <Image Source="C:\Users\User\source\repos\DiplomARM\DiplomARM\Resurs\status.png"
+            Height="40" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="43,0,251,76" Width="42"/>
+        <Label HorizontalAlignment="Center" VerticalAlignment="Center" Margin="88,288,148,106" Content="Статус аккаунта:" Width="100"/>
+        <ComboBox x:Name="ComboBoxStatus" FontSize="15" Margin="93,314,93,79" Cursor="Hand">
+            <Label>Пользователь</Label>
+            <Label>Администратор</Label>
+        </ComboBox>
+    </Grid>
+</Window>

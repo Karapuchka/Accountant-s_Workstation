@@ -1,0 +1,35 @@
+﻿<Window x:Class="DiplomARM.WorkingWondowSpisokSotrud"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DiplomARM"
+        mc:Ignorable="d"
+        Title="WorkingWondowSpisokSotrud" Height="450" Width="392">
+    <Grid>
+        <GroupBox Header="Введите данные:" Background="LightGray" Margin="10,0,10,76">
+            <Grid Margin="0,0,-12,-13" Height="333" VerticalAlignment="Top">
+                <Label Content="Имя:" Margin="28,8,288,276"/>
+                <TextBox x:Name="TextBoxName" Margin="70,10,17,285" />
+                <Label Content="Фамилия:" Margin="0,38,288,247"/>
+                <TextBox x:Name="TextBoxFamile" Margin="70,40,17,256" />
+                <Label Content="Отчество:" Margin="0,71,283,217"/>
+                <TextBox x:Name="TextBoxOtec" Margin="70,71,17,224" />
+                <Label Content="ИНН:" Margin="25,98,287,187"/>
+                <TextBox x:Name="TextBoxINN" Margin="70,101,17,194" />
+                <Label Content="Серия и номер паспорта:" Margin="0,131,200,159"/>
+                <TextBox x:Name="TextBoxSAndNP" Margin="46,161,33,134" />
+                <Label Content="Вораст:" Margin="13,191,283,93"/>
+                <TextBox x:Name="TextBoxAge" Margin="70,196,17,100" />
+                <Label Content="ID Отдела:" Margin="-2,222,285,61"/>
+                <TextBox x:Name="TextBoxIDOt" Margin="70,225,17,70" />
+                <Label Content="Должность:" Margin="-2,259,278,28"/>
+                <TextBox x:Name="TextBoxRang" Margin="72,259,17,36" />
+            </Grid>
+        </GroupBox>
+        
+
+        <Button Content="Перенестиданные в документ Word" Margin="88,364,63,23" Click="Button_Click" />
+
+    </Grid>
+</Window>
